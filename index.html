@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dream Home Calculator - Plan Your Construction Budget</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo-container">
+          <h1 class="logo">Dream Home Calculator</h1>
+        </div>
+        <nav class="nav">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+          </ul>
+        </nav>
+        <button id="theme-switcher" class="theme-switcher">
+          <span class="material-symbols-outlined">brightness_6</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section id="hero" class="hero">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h2 class="hero-title">Your Dream Home, Budgeted Perfectly.</h2>
+            <p class="hero-subtitle">
+              Stop guessing, start planning. "Dream Home Calculator" provides
+              transparent, detailed cost estimates for every stage of your home
+              construction project.
+            </p>
+            <a href="#" class="btn btn-primary">Download The App</a>
+            <p class="availability-note">
+              Coming soon to the Google Play Store!
+            </p>
+          </div>
+          <div class="hero-image-container">
+            <img
+              src="./image/00.png"
+              width="400"
+              alt="App showing a cost breakdown"
+              class="hero-image"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section">
+        <div class="container">
+          <h3>The Power of Smart Budgeting</h3>
+          <p>
+            Building a home is one of life's biggest milestones, but managing
+            the finances can be a major hurdle. Our app removes the complexity
+            by offering a suite of specialized calculators designed for
+            homeowners, contractors, and architects alike. Gain clarity and
+            confidence with precise estimations for materials, labor, and every
+            detail in between.
+          </p>
+        </div>
+      </section>
+
+      <section id="features" class="features-section">
+        <div class="container">
+          <h3>Comprehensive Calculation Tools</h3>
+          <div class="feature-grid">
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">home</span>
+              </div>
+              <h4>House Construction</h4>
+              <p>Get a full project estimate from foundation to finish.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined"
+                  >electrical_services</span
+                >
+              </div>
+              <h4>Electrical</h4>
+              <p>Calculate costs for wiring, fixtures, and points.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">plumbing</span>
+              </div>
+              <h4>Plumbing</h4>
+              <p>Estimate expenses for pipes, sanitary ware, and labor.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">square_foot</span>
+              </div>
+              <h4>Flooring & Tiling</h4>
+              <p>Compare costs for different materials and areas.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">format_paint</span>
+              </div>
+              <h4>Painting</h4>
+              <p>Budget accurately for interior and exterior paint jobs.</p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon">
+                <span class="material-symbols-outlined">door_front</span>
+              </div>
+              <h4>Doors & Windows</h4>
+              <p>Plan your expenses for frames, shutters, and glasswork.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+          <h3>Explore the App</h3>
+          <div class="image-gallery">
+            <img
+              src="./image/01.jpg"
+              alt="App Screenshot 1"
+              onclick="openLightbox('04.jpg')"
+            />
+            <img
+              src="./image/02.jpg"
+              alt="App Screenshot 2"
+              onclick="openLightbox('02.jpg')"
+            />
+            <img
+              src="./image/03.jpg"
+              alt="App Screenshot 3"
+              onclick="openLightbox('07.jpg')"
+            />
+            <img
+              src="./image/07.jpg"
+              alt="App Screenshot 4"
+              onclick="openLightbox('03.jpg')"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="download-cta" class="download-cta">
+        <div class="container">
+          <h3>Ready to Build with Confidence?</h3>
+          <p>
+            Take control of your construction budget. Download the Dream Home
+            Calculator today!
+          </p>
+          <a href="#" class="btn btn-primary">Get it on Google Play</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2025 Dream Home Calculator. All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="privacy.html">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+      <span class="close-btn" onclick="closeLightbox()">&times;</span>
+      <img class="lightbox-content" id="lightbox-img" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
