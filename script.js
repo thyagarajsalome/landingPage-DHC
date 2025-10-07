@@ -19,13 +19,32 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
+  // --- MOBILE MENU ---
+  const menuIcon = document.getElementById("menu-icon");
+  const nav = document.querySelector(".nav");
+
+  menuIcon.addEventListener("click", () => {
+    nav.classList.toggle("active");
+  });
+
   // --- LIGHTBOX ---
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightbox-img");
+  const galleryImages = document.querySelectorAll(".image-gallery img");
+
+  galleryImages.forEach((img) => {
+    img.addEventListener("click", () => {
+      const imageSrc = img
+        .getAttribute("onclick")
+        .replace("openLightbox('", "")
+        .replace("')", "");
+      openLightbox(imageSrc);
+    });
+  });
 
   window.openLightbox = (imageSrc) => {
     lightbox.classList.add("active");
-    lightboxImg.src = imageSrc;
+    lightboxImg.src = "./image/" + imageSrc;
   };
 
   window.closeLightbox = () => {
